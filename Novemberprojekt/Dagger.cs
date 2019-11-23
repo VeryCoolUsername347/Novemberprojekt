@@ -12,7 +12,10 @@ namespace Novemberprojekt
         {
             minDamage = 1;
             maxDamage = 11;
+            critChance = 25;
+            bonusCritDamage = 15;
             name = "Dagger";
+
         }
 
     }

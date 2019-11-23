@@ -8,20 +8,47 @@ namespace Novemberprojekt
 {
     class Weapon
     {
+        //Högsta och minsta skadan som vapnet kan göra.
         public int maxDamage;
         public int minDamage;
+        //Hur hög chans vapnet har att göra mer skada och hur mycket mer skada den kommer göra.
+        public int critChance;
+        public int bonusCritDamage;
+        //Vad vapnet heter.
         public string name;
-        Random minToMax = new Random();
+        //Generatorn som slumpar ett nummer mellan den minsta damagen som vapnet kan göra och det högsta.
+        Random generator = new Random();
 
 
-        //bonusDamage Or critDamage Or critChance
+        public bool DoesItCrit()
+        {
+            if (generator.Next(1, 101) >= critChance)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
-        //The attack 
-        public int Attack()
+
+
+
+        //Attacken som vapnet gör.
+        public virtual int Attack()
         {
             
-            int damage = minToMax.Next(minDamage, maxDamage);
-            return damage;
+            int damage = generator.Next(minDamage, maxDamage);
+            if (DoesItCrit())
+            {
+                return damage + bonusCritDamage;
+            }
+            else
+            {
+                return damage;
+
+            }
         }
 
 

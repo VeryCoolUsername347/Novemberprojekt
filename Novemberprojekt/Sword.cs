@@ -10,9 +10,14 @@ namespace Novemberprojekt
     {
         public Sword()
         {
+            
             minDamage = 5;
             maxDamage = 16;
+            critChance = 10;
+            bonusCritDamage = 13;
             name = "Sword";
+            
         }
+        
     }
 }
