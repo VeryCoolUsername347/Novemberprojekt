@@ -84,7 +84,7 @@ namespace Novemberprojekt
                     Console.WriteLine("1. Right hand: Sword");
                     Console.WriteLine("2. Left hand: Dagger");
                     Console.WriteLine("3. Ranged weapon: Bow");
-                    //Console.WriteLine("4. Drink potion. Amount: "+p1Potion.amount);
+                    Console.WriteLine("4. Drink potion. Amount: "+p1Potion.amount);
                     Console.WriteLine("5. Commit die.");
                     weaponPick = Console.ReadLine();
 
@@ -186,7 +186,7 @@ namespace Novemberprojekt
                     Console.WriteLine("1. Right hand: Sword");
                     Console.WriteLine("2. Left hand: Dagger");
                     Console.WriteLine("3. Ranged weapon: Bow");
-                    //Console.WriteLine("4. Drink potion. Amount: " + p2Potion.amount);
+                    Console.WriteLine("4. Drink potion. Amount: " + p2Potion.amount);
                     Console.WriteLine("5. Commit die.");
 
 

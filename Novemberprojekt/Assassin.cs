@@ -8,6 +8,7 @@ namespace Novemberprojekt
 {
     class Assassin : Fighter
     {
+        //Det här är klassen assassin
         public Assassin()
         {
             hp = 100;

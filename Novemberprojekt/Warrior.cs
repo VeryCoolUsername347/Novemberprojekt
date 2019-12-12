@@ -8,6 +8,7 @@ namespace Novemberprojekt
 {
     class Warrior : Fighter
     {
+        //Det här är klassen warrior
         public Warrior()
         {
             hp = 100;
